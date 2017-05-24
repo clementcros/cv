@@ -1,0 +1,4 @@
+services:
+#    camions.example:
+#        class: CamionsBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

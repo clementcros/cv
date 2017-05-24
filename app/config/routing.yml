@@ -1,0 +1,13 @@
+accueil:
+    resource: "@AccueilBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+camions:
+    resource: "@CamionsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

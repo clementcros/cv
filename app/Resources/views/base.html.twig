@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+         <link rel="stylesheet" href="{{ asset('bundles/EditionBundle/css/style.css') }}" type="text/css" media="all" />
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    
+    <header>
+       
+    </header>
+    <body>
+           <div class="nav">
+      <ul>
+        <li class="home"><a href="//">Accueil</a></li>
+        <li class="tutorials"><a class="active" href="/poidslour">Camions</a></li>
+        <li class="about"><a href="#">About</a></li>
+        <li class="news"><a href="#">Newsletter</a></li>
+        <li class="contact"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+    <footer>
+        <center><img src="http://www.languedocisolation.com/wp-content/uploads/2017/03/LI2014.jpg"></center>
+    </footer>
+</html>
+<style>
+    
+    .nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  
+    h1{
+        text-align: center;
+    }
+    body {
+    background-image: url("http://www.iwelcom.tv/clickandbuilds/iWelcom/wp-content/uploads/2014/09/White-State_Website-Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p {
+    text-align: center;
+    
+}
+
+#editionbundle_camions {
+    text-align: center;
+    padding: 25px;
+    margin: 15px;
+    margin: 0.5em 0; 
+}
+
+
+    th, td {
+        text-indent: 15px;
+    }
+    
+    label {
+        border-radius: 5;
+        width: 100%;
+    }
+    input{
+        width: 25em;
+        size: : 25em;
+    }
+    input{
+        border-radius: 5px;
+    }
+    textarea{
+        border-radius: 5px;
+        width: 25em;
+    }
+    
+    #camionsbundle_poidslourd_commentaireCoutNormal{
+        width: 40em;
+    }
+    #camionsbundle_poidslourd_commentaireCoutSupplementaire{
+         width: 40em;
+    }
+    
+    #camionsbundle_poidslourd{
+        text-align: center;
+    }
+    table, thead{
+        text-align: center;
+    }
+    
+    td{
+        
+         border-width: 3px;
+         border-style: solid;
+         border-radius: 3px;
+         border-color:black;
+    }
+</style>
